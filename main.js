@@ -1,3 +1,10 @@
 $(document).ready(function(){
-    alert('Olá mundo!')
+    $('header button').click(function() {
+        alert("Expandir formulário")
+    })
+
+    $('form').on('submit', function(e) {
+        console.log("submit");
+        e.preventDefault();
+    })
 })
